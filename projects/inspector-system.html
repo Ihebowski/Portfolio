@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inspector Management System - Digital platform for evaluating inspector performance">
+    <title>Inspector Management System - Iheb Barrah</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <!-- <img src="../images/logo.png" alt="IB Logo"> -->
+                <span class="logo-text">
+                    <span class="logo-name">Ihebowski</span>
+                    <span class="logo-tag">[dev]</span>
+                </span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#experience">Experience</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="hero-background">
+            <div class="grid-pattern"></div>
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+        </div>
+        <div class="container">
+            <div class="project-hero-content">
+                <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+                <h1>Inspector Management System</h1>
+                <p class="project-tagline">Digital platform for evaluating inspector performance with comprehensive analytics and mobile support</p>
+                <div class="project-meta">
+                    <div class="tech-stack">
+                        <span>Angular</span>
+                        <span>Node.js</span>
+                        <span>Flutter</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <div class="project-links-hero">
+                        <span class="private-repo-badge">🔒 Private Repository</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="project-details">
+        <div class="container">
+            <div class="project-overview">
+                <div class="section-header">
+                    <span class="section-label">Overview</span>
+                    <h2>About This Project</h2>
+                </div>
+                <div class="project-description">
+                    <p>The Inspector Management System is a comprehensive digital platform designed to evaluate, track, and optimize inspector performance across field operations. The system combines web-based administration with mobile field applications for real-time data collection and analysis.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Performance Analytics Dashboard:</strong> Built comprehensive admin dashboard using Angular with real-time charts, KPIs, and detailed performance metrics for monitoring inspector activities.
+                        </li>
+                        <li>
+                            <strong>Mobile Field Application:</strong> Developed Flutter-based mobile app enabling inspectors to log visits, submit reports, and upload evidence photos from the field.
+                        </li>
+                        <li>
+                            <strong>Inspection Management:</strong> Created end-to-end inspection workflow from assignment to completion, including scheduling, task lists, and quality checklists.
+                        </li>
+                        <li>
+                            <strong>Real-time Reporting:</strong> Implemented instant report submission with photo uploads, geolocation tagging, and timestamp verification for accountability.
+                        </li>
+                        <li>
+                            <strong>Performance Evaluation:</strong> Designed automated evaluation system scoring inspectors based on completion rate, quality, timeliness, and other customizable metrics.
+                        </li>
+                        <li>
+                            <strong>Role-based Access Control:</strong> Implemented multi-level user permissions for admins, supervisors, and field inspectors with appropriate access rights.
+                        </li>
+                    </ul>
+
+                    <h3>Technical Implementation</h3>
+                    <p>The full-stack application uses Angular for the web admin panel, Flutter for the mobile app, Node.js for the backend API, and MongoDB for data persistence:</p>
+                    <ul class="feature-list">
+                        <li>RESTful API architecture with Node.js and Express</li>
+                        <li>Real-time data synchronization between web and mobile clients</li>
+                        <li>MongoDB aggregation pipelines for complex performance analytics</li>
+                        <li>Image compression and cloud storage integration</li>
+                        <li>Offline-first mobile architecture with background sync</li>
+                    </ul>
+
+                    <h3>Challenges & Solutions</h3>
+                    <p>Managing offline functionality in areas with poor connectivity was a major challenge. This was addressed by implementing a robust offline-first architecture in the mobile app with conflict resolution strategies.</p>
+                    <p>Designing a fair and comprehensive performance evaluation algorithm required extensive collaboration with domain experts to define weighted metrics that accurately reflect inspector effectiveness.</p>
+                </div>
+            </div>
+
+            <!-- Screenshots/Media Section -->
+            <div class="project-media">
+                <div class="section-header">
+                    <span class="section-label">Gallery</span>
+                    <h2>Screenshots & Video</h2>
+                </div>
+                <h3 style="color: var(--primary-color); margin: 2rem 0 1rem;">Web Platform</h3>
+                <div class="media-grid">
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_login.png" alt="Web Login">
+                        <p class="media-caption">Web Login</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_admin_dashboard.png" alt="Admin Dashboard">
+                        <p class="media-caption">Admin Dashboard</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_director_dashboard.png" alt="Director Dashboard">
+                        <p class="media-caption">Director Dashboard</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_hr_dashboard.png" alt="HR Dashboard">
+                        <p class="media-caption">HR Dashboard</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_training_center_dashboard.png" alt="Training Center Dashboard">
+                        <p class="media-caption">Training Center</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_user_list.png" alt="User List">
+                        <p class="media-caption">User List</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_user_create.png" alt="Create User">
+                        <p class="media-caption">Create User</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_user_edit.png" alt="Edit User">
+                        <p class="media-caption">Edit User</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_user_activation.png" alt="User Activation">
+                        <p class="media-caption">User Activation</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_inspection_list.png" alt="Inspection List">
+                        <p class="media-caption">Inspection List</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_inspection_create.png" alt="Create Inspection">
+                        <p class="media-caption">Create Inspection</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_inspection_edit.png" alt="Edit Inspection">
+                        <p class="media-caption">Edit Inspection</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_inspection_evaluation.png" alt="Inspection Evaluation">
+                        <p class="media-caption">Evaluation</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_inspection_results.png" alt="Inspection Results">
+                        <p class="media-caption">Results</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_template_list.png" alt="Template List">
+                        <p class="media-caption">Template List</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_template_add.png" alt="Add Template">
+                        <p class="media-caption">Add Template</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_template_edit.png" alt="Edit Template">
+                        <p class="media-caption">Edit Template</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_template_view.png" alt="View Template">
+                        <p class="media-caption">View Template</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_training_list_director.png" alt="Training List">
+                        <p class="media-caption">Training List</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_training_create.png" alt="Create Training">
+                        <p class="media-caption">Create Training</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_training_edit.png" alt="Edit Training">
+                        <p class="media-caption">Edit Training</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_training_center_list.png" alt="Training Centers">
+                        <p class="media-caption">Training Centers</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_training_center_update.png" alt="Update Training Center">
+                        <p class="media-caption">Update Center</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_sector_list.png" alt="Sector List">
+                        <p class="media-caption">Sector List</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_sector_add.png" alt="Add Sector">
+                        <p class="media-caption">Add Sector</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_sector_update.png" alt="Update Sector">
+                        <p class="media-caption">Update Sector</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_ranking.png" alt="Ranking">
+                        <p class="media-caption">Ranking</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_ranking_config.png" alt="Ranking Config">
+                        <p class="media-caption">Ranking Config</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_notification.png" alt="Notifications">
+                        <p class="media-caption">Notifications</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/web/web_profile.png" alt="Profile">
+                        <p class="media-caption">Profile</p>
+                    </div>
+                </div>
+                <h3 style="color: var(--primary-color); margin: 3rem 0 1rem;">Mobile Application</h3>
+                <div class="media-grid">
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_login.png" alt="Mobile Login">
+                        <p class="media-caption">Login</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_forget_password.png" alt="Forgot Password">
+                        <p class="media-caption">Forgot Password</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_verification_code.png" alt="Verification Code">
+                        <p class="media-caption">Verification</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_new_password.png" alt="New Password">
+                        <p class="media-caption">New Password</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_inspection_calendar.png" alt="Inspection Calendar">
+                        <p class="media-caption">Calendar</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_inspection_details.png" alt="Inspection Details">
+                        <p class="media-caption">Inspection Details</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_template_selection.png" alt="Template Selection">
+                        <p class="media-caption">Template Selection</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_template_fill1.png" alt="Fill Template 1">
+                        <p class="media-caption">Fill Template 1</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_template_fill2.png" alt="Fill Template 2">
+                        <p class="media-caption">Fill Template 2</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_inspection_history.png" alt="Inspection History">
+                        <p class="media-caption">History</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_inspection_history_details.png" alt="History Details">
+                        <p class="media-caption">History Details</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_inspector_performance.png" alt="Performance">
+                        <p class="media-caption">Performance</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_training_dashboard.png" alt="Training Dashboard">
+                        <p class="media-caption">Training Dashboard</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_training_list.png" alt="Training List">
+                        <p class="media-caption">Training List</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_training_details.png" alt="Training Details">
+                        <p class="media-caption">Training Details</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_notification_list.png" alt="Notifications">
+                        <p class="media-caption">Notifications</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_notification_details.png" alt="Notification Details">
+                        <p class="media-caption">Notification Details</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_profile.png" alt="Profile">
+                        <p class="media-caption">Profile</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_settings.png" alt="Settings">
+                        <p class="media-caption">Settings</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/inspector-system/mobile/mobile_change_password.png" alt="Change Password">
+                        <p class="media-caption">Change Password</p>
+                    </div>
+                </div>
+                <h3 style="color: var(--primary-color); margin: 3rem 0 1rem;">Video Demo</h3>
+                <div class="media-grid">
+                    <div class="media-item video-item">
+                        <div class="youtube-embed">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/DeOUaMGH6Rc" title="Inspector System Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <p class="media-caption">Platform Demo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technologies Used -->
+            <div class="project-tech-details">
+                <div class="section-header">
+                    <span class="section-label">Tech Stack</span>
+                    <h2>Technologies Used</h2>
+                </div>
+                <div class="tech-categories">
+                    <div class="tech-category-detail">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>Angular</li>
+                            <li>Flutter (Mobile)</li>
+                            <li>TypeScript</li>
+                            <li>RxJS</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category-detail">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express.js</li>
+                            <li>MongoDB</li>
+                            <li>REST API</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category-detail">
+                        <h3>Features</h3>
+                        <ul>
+                            <li>Real-time Analytics</li>
+                            <li>Geolocation Services</li>
+                            <li>Offline-first Architecture</li>
+                            <li>Cloud Storage Integration</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="project-cta">
+                <h3>Interested in this project?</h3>
+                <p>This is a private enterprise application</p>
+                <a href="../index.html#projects" class="btn btn-primary">Back to All Projects</a>
+                <a href="../index.html#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Iheb Barrah. Built with HTML, CSS, and JavaScript.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

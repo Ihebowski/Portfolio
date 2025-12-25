@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GeoQuest - Interactive geography quiz game testing world knowledge">
+    <title>GeoQuest - Iheb Barrah</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <!-- <img src="../images/logo.png" alt="IB Logo"> -->
+                <span class="logo-text">
+                    <span class="logo-name">Ihebowski</span>
+                    <span class="logo-tag">[dev]</span>
+                </span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#experience">Experience</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="hero-background">
+            <div class="grid-pattern"></div>
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+        </div>
+        <div class="container">
+            <div class="project-hero-content">
+                <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+                <h1>GeoQuest</h1>
+                <p class="project-tagline">Interactive geography quiz game testing world knowledge with engaging challenges and leaderboards</p>
+                <div class="project-meta">
+                    <div class="tech-stack">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>REST API</span>
+                        <span>UI Design</span>
+                    </div>
+                    <div class="project-links-hero">
+                        <a href="https://github.com/ihebowski/GeoQuest" target="_blank" class="btn btn-outline">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="project-details">
+        <div class="container">
+            <div class="project-overview">
+                <div class="section-header">
+                    <span class="section-label">Overview</span>
+                    <h2>About This Project</h2>
+                </div>
+                <div class="project-description">
+                    <p>GeoQuest is an engaging geography quiz game that challenges players to test their knowledge of countries, capitals, flags, and geographical facts. The app features multiple game modes, competitive leaderboards, and a beautiful UI designed to make learning geography fun.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Multiple Quiz Modes:</strong> Implemented various game modes including capital cities, flag identification, country locations, and population challenges with increasing difficulty levels.
+                        </li>
+                        <li>
+                            <strong>Global Leaderboards:</strong> Built competitive ranking system using Firebase Firestore, allowing players to compete globally and track their performance against others.
+                        </li>
+                        <li>
+                            <strong>Progressive Difficulty:</strong> Created adaptive difficulty system that adjusts question complexity based on player performance and unlocks new challenges as they advance.
+                        </li>
+                        <li>
+                            <strong>Interactive Maps:</strong> Integrated REST APIs to display interactive world maps where players can identify countries, regions, and geographical features.
+                        </li>
+                        <li>
+                            <strong>Achievement System:</strong> Designed comprehensive achievement and badge system rewarding players for milestones, perfect scores, and consecutive wins.
+                        </li>
+                        <li>
+                            <strong>Beautiful UI/UX:</strong> Crafted engaging visual design with smooth animations, color-coded feedback, and intuitive navigation for an immersive quiz experience.
+                        </li>
+                    </ul>
+
+                    <h3>Technical Implementation</h3>
+                    <p>Built with Flutter for cross-platform support, Firebase for backend services, and REST APIs for geographical data:</p>
+                    <ul class="feature-list">
+                        <li>Firebase Authentication for user management</li>
+                        <li>Firestore for real-time leaderboard and user data synchronization</li>
+                        <li>REST API integration for country and geographical information</li>
+                        <li>Local caching for offline quiz availability</li>
+                        <li>Optimized image loading for flags and map graphics</li>
+                    </ul>
+
+                    <h3>Challenges & Solutions</h3>
+                    <p>Ensuring fair competition in the leaderboard system required implementing server-side validation of quiz scores and anti-cheat measures to prevent score manipulation.</p>
+                    <p>Managing the large dataset of geographical information efficiently was solved through strategic data caching and lazy loading of images and quiz content.</p>
+                </div>
+            </div>
+
+            <!-- Screenshots/Media Section -->
+            <div class="project-media">
+                <div class="section-header">
+                    <span class="section-label">Gallery</span>
+                    <h2>Screenshots</h2>
+                </div>
+                <div class="media-grid">
+                    <div class="media-item">
+                        <img src="../screenshots/geoquest/login_page.png" alt="GeoQuest Login">
+                        <p class="media-caption">Login Page</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/geoquest/register_page.png" alt="GeoQuest Register">
+                        <p class="media-caption">Register Page</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/geoquest/home_page_1.png" alt="GeoQuest Home 1">
+                        <p class="media-caption">Home Page 1</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/geoquest/home_page_2.png" alt="GeoQuest Home 2">
+                        <p class="media-caption">Home Page 2</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/geoquest/home_page_3.png" alt="GeoQuest Home 3">
+                        <p class="media-caption">Home Page 3</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/geoquest/quiz_page_1.png" alt="GeoQuest Quiz 1">
+                        <p class="media-caption">Quiz Page 1</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/geoquest/quiz_page_2.png" alt="GeoQuest Quiz 2">
+                        <p class="media-caption">Quiz Page 2</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/geoquest/result_page.png" alt="GeoQuest Results">
+                        <p class="media-caption">Result Page</p>
+                    </div>
+                    <div class="media-item">
+                        <img src="../screenshots/geoquest/leaderboard_page.png" alt="GeoQuest Leaderboard">
+                        <p class="media-caption">Leaderboard</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technologies Used -->
+            <div class="project-tech-details">
+                <div class="section-header">
+                    <span class="section-label">Tech Stack</span>
+                    <h2>Technologies Used</h2>
+                </div>
+                <div class="tech-categories">
+                    <div class="tech-category-detail">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>Flutter</li>
+                            <li>Dart</li>
+                            <li>Custom Animations</li>
+                            <li>Material Design</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category-detail">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Firebase Authentication</li>
+                            <li>Cloud Firestore</li>
+                            <li>REST API</li>
+                            <li>Cloud Functions</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category-detail">
+                        <h3>Features</h3>
+                        <ul>
+                            <li>Real-time Leaderboards</li>
+                            <li>Achievement System</li>
+                            <li>Local Caching</li>
+                            <li>Score Validation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="project-cta">
+                <h3>Interested in this project?</h3>
+                <p>Check out the source code and documentation on GitHub</p>
+                <a href="https://github.com/ihebowski/GeoQuest" target="_blank" class="btn btn-primary">View on GitHub</a>
+                <a href="../index.html#projects" class="btn btn-secondary">Back to All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Iheb Barrah. Built with HTML, CSS, and JavaScript.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

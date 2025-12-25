@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kwikmart - Collaborative grocery list app for shared shopping">
+    <title>Kwikmart - Iheb Barrah</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <!-- <img src="../images/logo.png" alt="IB Logo"> -->
+                <span class="logo-text">
+                    <span class="logo-name">Ihebowski</span>
+                    <span class="logo-tag">[dev]</span>
+                </span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#experience">Experience</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="hero-background">
+            <div class="grid-pattern"></div>
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+        </div>
+        <div class="container">
+            <div class="project-hero-content">
+                <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+                <h1>Kwikmart</h1>
+                <p class="project-tagline">Collaborative grocery list app enabling families and roommates to share and manage shopping together</p>
+                <div class="project-meta">
+                    <div class="tech-stack">
+                        <span>Flutter</span>
+                        <span>Firebase</span>
+                        <span>Firestore</span>
+                        <span>UI Design</span>
+                    </div>
+                    <div class="project-links-hero">
+                        <a href="https://github.com/ihebowski/Kwikmart" target="_blank" class="btn btn-outline">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="project-details">
+        <div class="container">
+            <div class="project-overview">
+                <div class="section-header">
+                    <span class="section-label">Overview</span>
+                    <h2>About This Project</h2>
+                </div>
+                <div class="project-description">
+                    <p>Kwikmart is a collaborative grocery shopping app that allows families, roommates, and groups to create and share grocery lists in real-time. The app streamlines grocery shopping by enabling multiple users to contribute to lists, check off items, and coordinate shopping trips.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Shared Lists:</strong> Implemented real-time collaborative lists using Firebase Firestore, allowing multiple users to view and edit the same grocery list simultaneously.
+                        </li>
+                        <li>
+                            <strong>Real-time Synchronization:</strong> Built instant sync system where changes made by one user appear immediately on all connected devices, preventing duplicate purchases.
+                        </li>
+                        <li>
+                            <strong>Item Categorization:</strong> Created smart categorization system organizing items by department (produce, dairy, meat, etc.) to optimize shopping route efficiency.
+                        </li>
+                        <li>
+                            <strong>Quick Add Features:</strong> Developed voice input and barcode scanning capabilities for rapid item addition, plus suggested items based on shopping history.
+                        </li>
+                        <li>
+                            <strong>Shopping Mode:</strong> Designed dedicated shopping interface with large checkboxes, category grouping, and item highlighting for easy in-store use.
+                        </li>
+                        <li>
+                            <strong>User Permissions:</strong> Implemented role-based access allowing list owners to manage members, set permissions, and control who can edit or view lists.
+                        </li>
+                    </ul>
+
+                    <h3>Technical Implementation</h3>
+                    <p>Built with Flutter and Firebase for real-time collaboration capabilities:</p>
+                    <ul class="feature-list">
+                        <li>Firebase Firestore for real-time database and synchronization</li>
+                        <li>Firebase Authentication for user management</li>
+                        <li>Stream-based architecture for reactive UI updates</li>
+                        <li>Offline support with automatic sync when reconnected</li>
+                        <li>Cloud Functions for shared list notifications</li>
+                    </ul>
+
+                    <h3>Challenges & Solutions</h3>
+                    <p>Managing concurrent edits from multiple users required implementing conflict resolution strategies and optimistic updates to maintain data consistency.</p>
+                    <p>Ensuring smooth performance with large lists was addressed through pagination, efficient Firestore queries, and smart caching strategies.</p>
+                </div>
+            </div>
+
+            <!-- Screenshots/Media Section -->
+            <div class="project-media">
+                <div class="section-header">
+                    <span class="section-label">Gallery</span>
+                    <h2>Screenshots & Video</h2>
+                </div>
+                <div class="media-grid">
+                    <div class="media-item">
+                        <img src="../screenshots/kwikmart/multiple-screens.jfif" alt="Kwikmart App Screens">
+                        <p class="media-caption">App Screens Overview</p>
+                    </div>
+                    <div class="media-item video-item">
+                        <div class="youtube-embed">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/ElVxHbMallI" title="Kwikmart Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <p class="media-caption">App Demo</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technologies Used -->
+            <div class="project-tech-details">
+                <div class="section-header">
+                    <span class="section-label">Tech Stack</span>
+                    <h2>Technologies Used</h2>
+                </div>
+                <div class="tech-categories">
+                    <div class="tech-category-detail">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>Flutter</li>
+                            <li>Dart</li>
+                            <li>Material Design</li>
+                            <li>Custom UI Components</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category-detail">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Firebase Auth</li>
+                            <li>Cloud Firestore</li>
+                            <li>Cloud Functions</li>
+                            <li>Firebase Storage</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category-detail">
+                        <h3>Features</h3>
+                        <ul>
+                            <li>Real-time Sync</li>
+                            <li>Offline Support</li>
+                            <li>List Sharing</li>
+                            <li>Smart Categorization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="project-cta">
+                <h3>Interested in this project?</h3>
+                <p>Check out the source code and documentation on GitHub</p>
+                <a href="https://github.com/ihebowski/Kwikmart" target="_blank" class="btn btn-primary">View on GitHub</a>
+                <a href="../index.html#projects" class="btn btn-secondary">Back to All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Iheb Barrah. Built with HTML, CSS, and JavaScript.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

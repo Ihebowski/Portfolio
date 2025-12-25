@@ -123,3 +123,69 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// Scroll to Top Button
+const scrollToTopBtn = document.getElementById('scrollToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        scrollToTopBtn.classList.add('visible');
+    } else {
+        scrollToTopBtn.classList.remove('visible');
+    }
+});
+
+scrollToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Image Lightbox for Project Detail Pages
+document.addEventListener('DOMContentLoaded', () => {
+    // Create lightbox element
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.innerHTML = `
+        <span class="lightbox-close">&times;</span>
+        <img src="" alt="">
+    `;
+    document.body.appendChild(lightbox);
+
+    const lightboxImg = lightbox.querySelector('img');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+
+    // Add click handlers to all project images (excluding images in youtube embeds)
+    document.querySelectorAll('.media-item img').forEach(img => {
+        // Skip images that are inside youtube-embed containers
+        if (!img.closest('.youtube-embed')) {
+            img.addEventListener('click', (e) => {
+                e.stopPropagation();
+                lightbox.classList.add('active');
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                document.body.style.overflow = 'hidden'; // Prevent scrolling
+            });
+        }
+    });
+
+    // Close lightbox when clicking on background or close button
+    const closeLightbox = () => {
+        lightbox.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+    };
+
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox || e.target === closeBtn) {
+            closeLightbox();
+        }
+    });
+
+    // Close lightbox with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightbox();
+        }
+    });
+});

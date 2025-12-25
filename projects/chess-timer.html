@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chess Timer - Customizable chess timer with multiple time control modes">
+    <title>Chess Timer - Iheb Barrah</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <!-- <img src="../images/logo.png" alt="IB Logo"> -->
+                <span class="logo-text">
+                    <span class="logo-name">Ihebowski</span>
+                    <span class="logo-tag">[dev]</span>
+                </span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#skills">Skills</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#experience">Experience</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero -->
+    <section class="project-hero">
+        <div class="hero-background">
+            <div class="grid-pattern"></div>
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+        </div>
+        <div class="container">
+            <div class="project-hero-content">
+                <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+                <h1>Chess Timer</h1>
+                <p class="project-tagline">Customizable chess timer supporting multiple time control modes for competitive and casual play</p>
+                <div class="project-meta">
+                    <div class="tech-stack">
+                        <span>Flutter</span>
+                        <span>GetX</span>
+                        <span>Mobile Development</span>
+                    </div>
+                    <div class="project-links-hero">
+                        <a href="https://github.com/ihebowski/Chess_Timer" target="_blank" class="btn btn-outline">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Details -->
+    <section class="project-details">
+        <div class="container">
+            <div class="project-overview">
+                <div class="section-header">
+                    <span class="section-label">Overview</span>
+                    <h2>About This Project</h2>
+                </div>
+                <div class="project-description">
+                    <p>Chess Timer is a precision timing application designed for chess players, supporting various time control formats from bullet to classical chess. The app provides reliable timekeeping with customizable settings and an intuitive interface optimized for tournament and casual play.</p>
+                    
+                    <h3>Key Features</h3>
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Multiple Time Controls:</strong> Implemented support for standard chess time formats including bullet (1-2 min), blitz (3-5 min), rapid (10-15 min), and classical (30+ min) with increment options.
+                        </li>
+                        <li>
+                            <strong>Custom Time Settings:</strong> Built flexible configuration system allowing players to set custom time controls, increment/delay values, and create presets for frequently used formats.
+                        </li>
+                        <li>
+                            <strong>Precision Timing:</strong> Developed accurate timing mechanism with millisecond precision, ensuring fair and reliable time tracking during competitive games.
+                        </li>
+                        <li>
+                            <strong>Fischer Increment:</strong> Integrated Fischer time increment feature adding specified seconds to each player's clock after every move.
+                        </li>
+                        <li>
+                            <strong>Sound & Haptic Feedback:</strong> Added audio alerts and vibration feedback for time running low, move confirmation, and game completion.
+                        </li>
+                        <li>
+                            <strong>Clean Interface:</strong> Designed minimalist UI with large, easily tappable buttons and clear time display optimized for quick glances during games.
+                        </li>
+                    </ul>
+
+                    <h3>Technical Implementation</h3>
+                    <p>Built with Flutter using GetX for efficient state management and reactive updates:</p>
+                    <ul class="feature-list">
+                        <li>GetX for lightweight and performant state management</li>
+                        <li>Dart Timer for precise countdown implementation</li>
+                        <li>Local storage for saving custom presets and settings</li>
+                        <li>Responsive design adapting to different screen sizes</li>
+                        <li>Wake lock to prevent screen timeout during games</li>
+                    </ul>
+
+                    <h3>Challenges & Solutions</h3>
+                    <p>Maintaining timing accuracy while handling rapid button presses required implementing debouncing and ensuring timer updates didn't accumulate errors over long games.</p>
+                    <p>Creating an interface that's both aesthetically pleasing and functional during intense time pressure was solved through user testing and iterative design improvements.</p>
+                </div>
+            </div>
+
+            <!-- Technologies Used -->
+            <div class="project-tech-details">
+                <div class="section-header">
+                    <span class="section-label">Tech Stack</span>
+                    <h2>Technologies Used</h2>
+                </div>
+                <div class="tech-categories">
+                    <div class="tech-category-detail">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>Flutter</li>
+                            <li>Dart</li>
+                            <li>GetX</li>
+                            <li>Material Design</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category-detail">
+                        <h3>Core Features</h3>
+                        <ul>
+                            <li>Precision Timing</li>
+                            <li>Time Control Modes</li>
+                            <li>Fischer Increment</li>
+                            <li>Custom Presets</li>
+                        </ul>
+                    </div>
+                    <div class="tech-category-detail">
+                        <h3>UX Features</h3>
+                        <ul>
+                            <li>Sound Alerts</li>
+                            <li>Haptic Feedback</li>
+                            <li>Wake Lock</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="project-cta">
+                <h3>Interested in this project?</h3>
+                <p>Check out the source code and documentation on GitHub</p>
+                <a href="https://github.com/ihebowski/Chess_Timer" target="_blank" class="btn btn-primary">View on GitHub</a>
+                <a href="../index.html#projects" class="btn btn-secondary">Back to All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Iheb Barrah. Built with HTML, CSS, and JavaScript.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
